@@ -15,7 +15,7 @@ export const userSchema = new Schema<IUser>(
       required: true,
     },
     password: {
-      text: String,
+      type: String,
       required: true,
     },
   },
