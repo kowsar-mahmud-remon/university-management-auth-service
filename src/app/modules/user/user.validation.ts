@@ -9,8 +9,6 @@ const createUserZodSchema = z.object({
   }),
 });
 
-// await createUserZodSchema.parseAsync(req)
-
 export const UserValidation = {
   createUserZodSchema,
 };
