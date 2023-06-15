@@ -1,0 +1,40 @@
+{ level: 'error', label: 'Ph', timestamp: '2023-06-14T13:14:37.627Z' }
+{ level: 'error', label: 'Ph', timestamp: '2023-06-14T13:19:18.526Z' }
+{ level: 'error', label: 'Ph', timestamp: '2023-06-14T13:20:43.667Z' }
+{
+  errors: {
+    academicFaculty: CastError: Cast to ObjectId failed for value "" (type string) at path "academicFaculty" because of "BSONError"
+        at ObjectId.cast (C:\projects\university-management-auth-service\node_modules\mongoose\lib\schema\objectid.js:248:11)
+        at ObjectId.SchemaType.applySetters (C:\projects\university-management-auth-service\node_modules\mongoose\lib\schematype.js:1204:12)
+        at model.$set (C:\projects\university-management-auth-service\node_modules\mongoose\lib\document.js:1414:22)
+        at model.$set (C:\projects\university-management-auth-service\node_modules\mongoose\lib\document.js:1116:16)
+        at model.Document (C:\projects\university-management-auth-service\node_modules\mongoose\lib\document.js:165:12)
+        at model.Model (C:\projects\university-management-auth-service\node_modules\mongoose\lib\model.js:122:12)
+        at new model (C:\projects\university-management-auth-service\node_modules\mongoose\lib\model.js:4607:15)
+        at C:\projects\university-management-auth-service\node_modules\mongoose\lib\model.js:2851:16
+        at Array.map (<anonymous>)
+        at Function.create (C:\projects\university-management-auth-service\node_modules\mongoose\lib\model.js:2840:38) {
+      stringValue: '""',
+      messageFormat: undefined,
+      kind: 'ObjectId',
+      value: '',
+      path: 'academicFaculty',
+      reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+          at new ObjectId (C:\projects\university-management-auth-service\node_modules\bson\src\objectid.ts:88:15)
+          at castObjectId (C:\projects\university-management-auth-service\node_modules\mongoose\lib\cast\objectid.js:25:12)
+          at ObjectId.cast (C:\projects\university-management-auth-service\node_modules\mongoose\lib\schema\objectid.js:246:12)
+          at ObjectId.SchemaType.applySetters (C:\projects\university-management-auth-service\node_modules\mongoose\lib\schematype.js:1204:12)
+          at model.$set (C:\projects\university-management-auth-service\node_modules\mongoose\lib\document.js:1414:22)
+          at model.$set (C:\projects\university-management-auth-service\node_modules\mongoose\lib\document.js:1116:16)
+          at model.Document (C:\projects\university-management-auth-service\node_modules\mongoose\lib\document.js:165:12)
+          at model.Model (C:\projects\university-management-auth-service\node_modules\mongoose\lib\model.js:122:12)
+          at new model (C:\projects\university-management-auth-service\node_modules\mongoose\lib\model.js:4607:15)
+          at C:\projects\university-management-auth-service\node_modules\mongoose\lib\model.js:2851:16,
+      valueType: 'string'
+    }
+  },
+  _message: 'AcademicDepartment validation failed',
+  level: 'error',
+  label: 'Ph',
+  timestamp: '2023-06-14T13:29:42.996Z'
+}
