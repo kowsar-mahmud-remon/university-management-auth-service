@@ -2,59 +2,47 @@
   message: 'Data base is connected',
   level: 'info',
   label: 'Ph',
-  timestamp: '2023-06-07T11:00:52.186Z'
+  timestamp: '2023-06-21T12:03:05.002Z'
 }
 {
   message: 'Application app listening on port 5000',
   level: 'info',
   label: 'Ph',
-  timestamp: '2023-06-07T11:00:52.205Z'
+  timestamp: '2023-06-21T12:03:05.019Z'
 }
 {
   message: 'Data base is connected',
   level: 'info',
   label: 'Ph',
-  timestamp: '2023-06-07T11:18:06.830Z'
+  timestamp: '2023-06-21T12:04:02.970Z'
 }
 {
   message: 'Application app listening on port 5000',
   level: 'info',
   label: 'Ph',
-  timestamp: '2023-06-07T11:18:06.862Z'
+  timestamp: '2023-06-21T12:04:02.983Z'
 }
 {
   message: 'Data base is connected',
   level: 'info',
   label: 'Ph',
-  timestamp: '2023-06-07T11:18:12.722Z'
+  timestamp: '2023-06-21T12:04:42.832Z'
 }
 {
   message: 'Application app listening on port 5000',
   level: 'info',
   label: 'Ph',
-  timestamp: '2023-06-07T11:18:12.749Z'
+  timestamp: '2023-06-21T12:04:42.863Z'
 }
 {
   message: 'Data base is connected',
   level: 'info',
   label: 'Ph',
-  timestamp: '2023-06-07T11:18:36.141Z'
+  timestamp: '2023-06-21T12:06:07.044Z'
 }
 {
   message: 'Application app listening on port 5000',
   level: 'info',
   label: 'Ph',
-  timestamp: '2023-06-07T11:18:36.154Z'
-}
-{
-  message: 'Data base is connected',
-  level: 'info',
-  label: 'Ph',
-  timestamp: '2023-06-07T11:22:21.229Z'
-}
-{
-  message: 'Application app listening on port 5000',
-  level: 'info',
-  label: 'Ph',
-  timestamp: '2023-06-07T11:22:21.247Z'
+  timestamp: '2023-06-21T12:06:07.057Z'
 }

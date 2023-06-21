@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose';
 import { IUser, UserModel } from './user.interface';
 
-export const userSchema = new Schema<IUser>(
+const userSchema = new Schema<IUser>(
   {
     id: {
       type: String,
@@ -16,6 +16,18 @@ export const userSchema = new Schema<IUser>(
       type: String,
       required: true,
     },
+    student: {
+      type: Schema.Types.ObjectId,
+      ref: 'Student',
+    },
+    faculty: {
+      type: Schema.Types.ObjectId,
+      ref: 'Faculty',
+    },
+    admin: {
+      type: Schema.Types.ObjectId,
+      ref: 'Admin',
+    },
   },
   {
     timestamps: true,
@@ -24,5 +36,4 @@ export const userSchema = new Schema<IUser>(
     },
   }
 );
-
 export const User = model<IUser, UserModel>('User', userSchema);

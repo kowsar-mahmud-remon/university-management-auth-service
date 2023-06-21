@@ -7,7 +7,7 @@ import sendResponse from '../../../shared/sendResponse';
 import { academicDepartmentFilterableFields } from './academicDepartment.constants';
 import { IAcademicDepartment } from './academicDepartment.interfaces';
 import { AcademicDepartmentService } from './academicDepartment.service';
-import { paginationField } from '../../../constants/pagination';
+import { paginationFields } from '../../../constants/pagination';
 
 const createDepartment = catchAsync(async (req: Request, res: Response) => {
   const { ...academicDepartmentData } = req.body;
@@ -25,7 +25,7 @@ const createDepartment = catchAsync(async (req: Request, res: Response) => {
 
 const getAllDepartments = catchAsync(async (req: Request, res: Response) => {
   const filters = pick(req.query, academicDepartmentFilterableFields);
-  const paginationOptions = pick(req.query, paginationField);
+  const paginationOptions = pick(req.query, paginationFields);
 
   const result = await AcademicDepartmentService.getAllDepartments(
     filters,
