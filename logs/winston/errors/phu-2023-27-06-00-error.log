@@ -1,0 +1,7 @@
+Tue Jun 27 2023 0:32:35 } [PH] error: Cannot read properties of null (reading 'year')
+Tue Jun 27 2023 0:43:2 } [PH] error: Cannot read properties of null (reading 'year')
+Tue Jun 27 2023 0:47:32 } [PH] error: Cannot read properties of null (reading 'year')
+Tue Jun 27 2023 0:48:24 } [PH] error: Cannot read properties of null (reading 'year')
+Tue Jun 27 2023 0:50:42 } [PH] error: Cannot read properties of null (reading 'year')
+Tue Jun 27 2023 0:57:4 } [PH] error: Student validation failed: academicFaculty: Cast to ObjectId failed for value "6473sdb67a123df7493739e2a0" (type string) at path "academicFaculty" because of "BSONError"
+Tue Jun 27 2023 0:57:59 } [PH] error: Student validation failed: academicFaculty: Cast to ObjectId failed for value "6473sdb67a123df7493739e2a0" (type string) at path "academicFaculty" because of "BSONError"

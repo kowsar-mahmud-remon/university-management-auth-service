@@ -1,0 +1,2 @@
+Tue Jun 27 2023 1:1:40 } [PH] error: Student validation failed: academicFaculty: Cast to ObjectId failed for value "6473sdb67a123df7493739e2a0" (type string) at path "academicFaculty" because of "BSONError"
+Tue Jun 27 2023 1:3:16 } [PH] error: Student validation failed: academicFaculty: Cast to ObjectId failed for value "6473sdb67a123df7493739e2a0" (type string) at path "academicFaculty" because of "BSONError"
