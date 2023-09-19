@@ -2,9 +2,9 @@
 import bcrypt from 'bcrypt';
 import { Schema, model } from 'mongoose';
 import config from '../../../config';
-import { IUser, UserModel } from './user.interface';
+import { IUser, IUserMethods, UserModel } from './user.interface';
 
-const UserSchema = new Schema<IUser, UserModel>(
+const UserSchema = new Schema<IUser, UserModel, IUserMethods>(
   {
     id: {
       type: String,

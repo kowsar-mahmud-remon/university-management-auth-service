@@ -1,6 +1,6 @@
 import {
   IAcademicSemesterCodes,
-  IAcademicSemesterMonth,
+  IAcademicSemesterMonths,
   IAcademicSemesterTitles,
 } from './academicSemester.interface';
 
@@ -9,13 +9,14 @@ export const academicSemesterTitles: IAcademicSemesterTitles[] = [
   'Summer',
   'Fall',
 ];
+
 export const academicSemesterCodes: IAcademicSemesterCodes[] = [
   '01',
   '02',
   '03',
 ];
 
-export const academicSemesterMonths: IAcademicSemesterMonth[] = [
+export const acdemicSemesterMonths: IAcademicSemesterMonths[] = [
   'January',
   'February',
   'March',
@@ -46,3 +47,7 @@ export const academicSemesterFilterableFields = [
   'code',
   'year',
 ];
+
+export const EVENT_ACADEMIC_SEMESTER_CREATED = 'academic-semester.created';
+export const EVENT_ACADEMIC_SEMESTER_UPDATED = 'academic-semester.updated';
+export const EVENT_ACADEMIC_SEMESTER_DELETED = 'academic-semester.deleted';

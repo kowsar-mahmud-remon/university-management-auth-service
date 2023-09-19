@@ -1,8 +1,8 @@
 import { z } from 'zod';
 import {
   academicSemesterCodes,
-  academicSemesterMonths,
   academicSemesterTitles,
+  acdemicSemesterMonths,
 } from './academicSemester.constant';
 
 const createAcademicSemesterZodSchema = z.object({
@@ -14,16 +14,14 @@ const createAcademicSemesterZodSchema = z.object({
       required_error: 'Year is required ',
     }),
     code: z.enum([...academicSemesterCodes] as [string, ...string[]]),
-    startMonth: z.enum([...academicSemesterMonths] as [string, ...string[]], {
+    startMonth: z.enum([...acdemicSemesterMonths] as [string, ...string[]], {
       required_error: 'Start month is needed',
     }),
-    endMonth: z.enum([...academicSemesterMonths] as [string, ...string[]], {
+    endMonth: z.enum([...acdemicSemesterMonths] as [string, ...string[]], {
       required_error: 'End month is needed',
     }),
   }),
 });
-
-///  Ensure 1: Route Level : Update -->  Give me title and code both , neither
 
 const updateAcademicSemesterZodSchema = z
   .object({
@@ -42,12 +40,12 @@ const updateAcademicSemesterZodSchema = z
         .enum([...academicSemesterCodes] as [string, ...string[]])
         .optional(),
       startMonth: z
-        .enum([...academicSemesterMonths] as [string, ...string[]], {
+        .enum([...acdemicSemesterMonths] as [string, ...string[]], {
           required_error: 'Start month is needed',
         })
         .optional(),
       endMonth: z
-        .enum([...academicSemesterMonths] as [string, ...string[]], {
+        .enum([...acdemicSemesterMonths] as [string, ...string[]], {
           required_error: 'End month is needed',
         })
         .optional(),

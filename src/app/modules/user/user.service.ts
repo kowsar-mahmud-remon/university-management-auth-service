@@ -33,10 +33,6 @@ const createStudent = async (
     student.academicSemester
   ).lean();
 
-  if (!academicsemester) {
-    throw new ApiError(400, 'invalid academicsemester id');
-  }
-
   let newUserAllData = null;
   const session = await mongoose.startSession();
   try {
