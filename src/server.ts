@@ -1,9 +1,10 @@
+/* eslint-disable no-console */
+import { Server } from 'http';
 import mongoose from 'mongoose';
 import app from './app';
-import config from './config';
 import subscribeToEvents from './app/events';
-import { logger, errorlogger } from './shared/logger';
-import { Server } from 'http';
+import config from './config/index';
+import { errorlogger } from './shared/logger';
 import { RedisClient } from './shared/redis';
 
 process.on('uncaughtException', error => {
@@ -18,14 +19,17 @@ async function bootstrap() {
     await RedisClient.connect().then(() => {
       subscribeToEvents();
     });
+
     await mongoose.connect(config.database_url as string);
-    logger.info(`Data base is connected`);
+    // logger.info(`🛢   Database is connected successfully`);
+    console.log(`🛢   Database is connected successfully`);
 
     server = app.listen(config.port, () => {
-      logger.info(`Application app listening on port ${config.port}`);
+      // logger.info(`Application  listening on port ${config.port}`);
+      console.log(`Application  listening on port ${config.port}`);
     });
-  } catch (error) {
-    errorlogger.error('Failed to connect database', error);
+  } catch (err) {
+    errorlogger.error('Failed to connect database', err);
   }
 
   process.on('unhandledRejection', error => {
@@ -42,9 +46,9 @@ async function bootstrap() {
 
 bootstrap();
 
-process.on('SIGTERM', () => {
-  logger.info('SIGTERM is receiving');
-  if (server) {
-    server.close();
-  }
-});
+// process.on('SIGTERM', () => {
+//   logger.info('SIGTERM is received');
+//   if (server) {
+//     server.close();
+//   }
+// });
