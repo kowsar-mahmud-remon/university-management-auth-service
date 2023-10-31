@@ -175,7 +175,8 @@ const forgotPass = async (payload: { id: string }) => {
     '50m'
   );
 
-  const resetLink: string = config.resetlink + `token=${passResetToken}`;
+  const resetLink: string =
+    config.resetlink + `id=${user?.id}&token=${passResetToken}`;
 
   console.log('profile: ', profile);
   await sendEmail(
